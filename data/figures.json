@@ -1,0 +1,276 @@
+{
+  "degre": {
+    "image": "assets/papers/degre.png",
+    "source": "https://arxiv.org/pdf/2605.25749",
+    "page": 4,
+    "label": "Figure 2",
+    "alt": "Original Figure 2 from DeGRe: Dense-supervised Generative Reranking for Recommendation",
+    "width": 1272,
+    "height": 675,
+    "crop": [
+      94,
+      78,
+      518,
+      303
+    ]
+  },
+  "beyond-fidelity": {
+    "image": "assets/papers/beyond-fidelity.png",
+    "source": "https://doi.org/10.1109/TIP.2026.3706287",
+    "page": 4,
+    "label": "Figure 2",
+    "alt": "Original Figure 2 from Beyond Fidelity: Diverse Image Synthesis via Retrieval-Augmented Diffusion",
+    "width": 1542,
+    "height": 558,
+    "crop": [
+      49,
+      60,
+      563,
+      246
+    ],
+    "sourceNote": "Author-provided PDF"
+  },
+  "video-reasoning": {
+    "image": "assets/papers/video-reasoning.png",
+    "source": "",
+    "page": 3,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Probing Human-Centric Rule-based Reasoning Abilities of Video Generation Models for Vision Foundation Intelligence",
+    "width": 1389,
+    "height": 444,
+    "crop": [
+      74,
+      80,
+      537,
+      228
+    ],
+    "sourceNote": "Author-provided PDF"
+  },
+  "snr-edit": {
+    "image": "assets/papers/snr-edit.png",
+    "source": "https://arxiv.org/pdf/2601.19180",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from SNR-Edit: Structure-Aware Noise Rectification for Inversion-Free Flow-Based Editing",
+    "width": 1470,
+    "height": 792,
+    "crop": [
+      60,
+      369,
+      550,
+      633
+    ]
+  },
+  "any-to-bokeh": {
+    "image": "assets/papers/any-to-bokeh.png",
+    "source": "https://arxiv.org/pdf/2505.21593",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Any-to-Bokeh: Arbitrary-Subject Video Refocusing with Video Diffusion Model",
+    "width": 1200,
+    "height": 621,
+    "crop": [
+      106,
+      204,
+      506,
+      411
+    ]
+  },
+  "dsc-track": {
+    "image": "assets/papers/dsc-track.png",
+    "source": "https://arxiv.org/pdf/2508.11323v2",
+    "page": 3,
+    "label": "Figure 2",
+    "alt": "Original Figure 2 from Delving into Dynamic Scene Cue-Consistency for Robust 3D Multi-Object Tracking",
+    "width": 1515,
+    "height": 813,
+    "crop": [
+      54,
+      50,
+      559,
+      321
+    ]
+  },
+  "diagramgpt": {
+    "image": "assets/papers/diagramgpt.png",
+    "source": "https://ojs.aaai.org/index.php/AAAI/article/view/40286",
+    "page": 3,
+    "label": "Figure 2",
+    "alt": "Original Figure 2 from DiagramGPT-Llama3: Enabling Editable, High-Fidelity Diagram Generation with Vision Large Language Models",
+    "width": 1488,
+    "height": 522,
+    "crop": [
+      56,
+      56,
+      552,
+      230
+    ],
+    "sourceNote": "Author-provided PDF"
+  },
+  "sudo": {
+    "image": "assets/papers/sudo.png",
+    "source": "https://arxiv.org/pdf/2504.14534",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Self-Supervised Direct Preference Optimization for Text-to-Image Diffusion Models",
+    "width": 714,
+    "height": 525,
+    "crop": [
+      317,
+      231,
+      555,
+      406
+    ]
+  },
+  "lora-composer": {
+    "image": "assets/papers/lora-composer.png",
+    "source": "https://arxiv.org/pdf/2403.11627",
+    "page": 2,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from LoRA-Composer: Leveraging Low-Rank Adaptation for Multi-Concept Customization in Training-Free Diffusion Models",
+    "width": 1191,
+    "height": 453,
+    "crop": [
+      108,
+      70,
+      505,
+      221
+    ]
+  },
+  "personalvideo": {
+    "image": "assets/papers/personalvideo.png",
+    "source": "https://arxiv.org/pdf/2411.17048",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from PersonalVideo: High ID-Fidelity Video Customization without Dynamic and Semantic Degradation",
+    "width": 1413,
+    "height": 810,
+    "crop": [
+      70,
+      292,
+      541,
+      562
+    ]
+  },
+  "magicid": {
+    "image": "assets/papers/magicid.png",
+    "source": "https://arxiv.org/pdf/2503.12689",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from MagicID: Hybrid Preference Optimization for ID-Consistent and Dynamic-Preserved Video Customization",
+    "width": 1482,
+    "height": 864,
+    "crop": [
+      58,
+      248,
+      552,
+      536
+    ]
+  },
+  "local-control": {
+    "image": "assets/papers/local-control.png",
+    "source": "https://arxiv.org/pdf/2312.08768v3",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Local Conditional Controlling for Text-to-Image Diffusion Models",
+    "width": 1512,
+    "height": 576,
+    "crop": [
+      54,
+      189,
+      558,
+      381
+    ]
+  },
+  "occupancym3d": {
+    "image": "assets/papers/occupancym3d.png",
+    "source": "https://arxiv.org/pdf/2305.15694",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Learning Occupancy for Monocular 3D Object Detection",
+    "width": 726,
+    "height": 276,
+    "crop": [
+      307,
+      252,
+      549,
+      344
+    ]
+  },
+  "temporal-fusion": {
+    "image": "assets/papers/temporal-fusion.png",
+    "source": "https://doi.org/10.1109/TIP.2024.3378475",
+    "page": 4,
+    "label": "Figure 2",
+    "alt": "Original Figure 2 from Temporal Feature Fusion for 3D Detection in Monocular Video",
+    "width": 1542,
+    "height": 588,
+    "crop": [
+      49,
+      52,
+      563,
+      248
+    ],
+    "sourceNote": "Author-provided PDF"
+  },
+  "hboe": {
+    "image": "assets/papers/hboe.png",
+    "source": "https://ojs.aaai.org/index.php/AAAI/article/download/28582/29132",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Towards Fine-Grained HBOE with Rendered Orientation Set and Laplace Smoothing",
+    "width": 717,
+    "height": 741,
+    "crop": [
+      319,
+      223,
+      558,
+      470
+    ]
+  },
+  "ice": {
+    "image": "assets/papers/ice.png",
+    "source": "https://ojs.aaai.org/index.php/AAAI/article/download/26230/26002",
+    "page": 1,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Towards In-Distribution Compatible Out-of-Distribution Detection",
+    "width": 717,
+    "height": 357,
+    "crop": [
+      319,
+      216,
+      558,
+      335
+    ]
+  },
+  "efficient-at": {
+    "image": "assets/papers/efficient-at.png",
+    "source": "https://arxiv.org/pdf/2207.10498",
+    "page": 2,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Towards Efficient Adversarial Training on Vision Transformers",
+    "width": 1014,
+    "height": 381,
+    "crop": [
+      137,
+      117,
+      475,
+      244
+    ]
+  },
+  "wider-networks": {
+    "image": "assets/papers/wider-networks.png",
+    "source": "https://proceedings.neurips.cc/paper_files/paper/2021/file/3937230de3c8041e4da6ac3246a888e8-Paper.pdf",
+    "page": 2,
+    "label": "Figure 1",
+    "alt": "Original Figure 1 from Do Wider Neural Networks Really Help Adversarial Robustness?",
+    "width": 585,
+    "height": 321,
+    "crop": [
+      307,
+      240,
+      502,
+      347
+    ]
+  }
+}

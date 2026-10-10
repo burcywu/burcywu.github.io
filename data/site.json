@@ -1,0 +1,197 @@
+{
+  "name": "Boxi Wu",
+  "title": "Distinguished Research Fellow",
+  "supervision": "Ph.D. Supervisor",
+  "school": "School of Software Technology",
+  "university": "Zhejiang University",
+  "email": "wuboxi@zju.edu.cn",
+  "siteUrl": "https://burcywu.github.io",
+  "lastUpdated": "2026-10-10",
+  "portrait": "assets/boxi-wu.jpg",
+  "portraitWidth": 1078,
+  "portraitHeight": 1379,
+  "links": {
+    "scholar": "https://scholar.google.com/citations?user=AqDe35sAAAAJ&hl=en",
+    "github": "https://github.com/burcywu",
+    "university": "https://person.zju.edu.cn/NB23009"
+  },
+  "intro": "My current research focuses on Diffusion Models, Large Language Models, and AI Agents.",
+  "recognition": "I received the KDD 2026 Best Paper Award (ADS Honorable Mention) as the sole corresponding author.",
+  "company": {
+    "name": "DarwinMind",
+    "role": "co-founder and CEO",
+    "url": "https://www.qbitai.com/2026/08/474806.html"
+  },
+  "biography": "Hi! I am a Distinguished Research Fellow at Zhejiang University. I received my Ph.D. from the State Key Laboratory of CAD&CG at Zhejiang University in 2022, advised by Prof. Xiaofei He and Prof. Deng Cai, and my bachelor's degree in Computer Science from Zhejiang University in 2016. In 2019, I worked as a research assistant at the University of California, Los Angeles, with Prof. Quanquan Gu (Sloan Research Fellow). Since 2020, I have also worked with Dr. Wei Liu (IEEE Fellow) at Tencent AI Lab.",
+  "research": [
+    { "name": "Diffusion Models", "description": "" },
+    { "name": "Large Language Models", "description": "" },
+    { "name": "AI Agents", "description": "" }
+  ],
+  "background": [
+    {
+      "year": "2022",
+      "title": "Ph.D. in Engineering",
+      "institution": "Zhejiang University · State Key Laboratory of CAD&CG",
+      "detail": "Advisors: Prof. Xiaofei He and Prof. Deng Cai"
+    },
+    {
+      "year": "2019",
+      "title": "Research Assistant",
+      "institution": "University of California, Los Angeles (UCLA)",
+      "detail": "With Prof. Quanquan Gu"
+    },
+    {
+      "year": "2016",
+      "title": "Bachelor of Engineering in Computer Science",
+      "institution": "Zhejiang University · College of Computer Science and Technology",
+      "detail": ""
+    }
+  ],
+  "teaching": [
+    { "title": "Computer Systems I", "term": "Spring–Summer 2026", "detail": "64 teaching hours · Required course" },
+    { "title": "Deep Learning Applications and Practice in Intelligent Driving", "term": "Autumn 2024 & 2025", "detail": "32 teaching hours · Specialty course" },
+    { "title": "Digital Twin Technology and Applications", "term": "Winter 2024", "detail": "32 teaching hours · Specialty course" }
+  ],
+  "peopleIntro": "Current students and alumni of my research group.",
+  "showStudentPlaceholders": false,
+  "students": [
+    { "id": "student-03", "status": "current", "name": "Yibo Zhao", "role": "Ph.D. Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/phd-03.jpg", "photoPosition": "22% 35%", "photoConfirmed": true, "photoNumber": 3, "publish": true },
+    { "id": "student-05", "status": "current", "name": "Yongyuan Chen", "role": "Ph.D. Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/phd-05.jpg", "photoPosition": "68% 32%", "photoConfirmed": true, "photoNumber": 5, "publish": true },
+    { "id": "student-02", "status": "current", "name": "Lifan Jiang", "role": "Ph.D. Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/phd-02.jpg", "photoPosition": "46% 35%", "photoConfirmed": true, "photoNumber": 2, "publish": true },
+    { "id": "student-04", "status": "current", "name": "Yunyi Teng", "role": "Ph.D. Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/phd-04.jpg", "photoPosition": "55% 22%", "photoConfirmed": true, "photoNumber": 4, "publish": true },
+    { "id": "student-01", "status": "current", "name": "Yuying Ma", "role": "Ph.D. Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/phd-01.jpg", "photoPosition": "50% 35%", "photoConfirmed": true, "photoNumber": 1, "publish": true },
+    { "id": "student-06", "status": "current", "name": "Jiahui Zhang", "role": "Master's Student", "affiliation": "School of Software Technology", "detail": "", "photo": "assets/students/jiahui-zhang.jpg", "photoPosition": "50% 55%", "photoConfirmed": true, "photoNumber": 6, "publish": true },
+    { "id": "student-07", "status": "current", "name": "Shulong Yu", "role": "Master's Student", "affiliation": "School of Software Technology", "detail": "", "photo": "assets/students/shulong-yu.jpg", "photoPosition": "45% 35%", "photoConfirmed": true, "photoNumber": 7, "publish": true },
+    { "id": "student-08", "status": "current", "name": "Ye Ji", "role": "Master's Student", "affiliation": "School of Software Technology", "detail": "", "photo": "assets/students/ye-ji.jpg", "photoPosition": "50% 55%", "photoConfirmed": true, "photoNumber": 8, "publish": true },
+    { "id": "student-09", "status": "current", "name": "Yuhang Pei", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/yuhang-pei.jpg", "photoPosition": "53% 35%", "photoConfirmed": true, "photoNumber": 9, "publish": true },
+    { "id": "student-10", "status": "current", "name": "Lanxin Ye", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/lanxin-ye.jpg", "photoPosition": "50% 25%", "photoConfirmed": true, "photoNumber": 10, "publish": true },
+    { "id": "student-11", "status": "current", "name": "Yiming Xu", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/yiming-xu.jpg", "photoPosition": "50% 35%", "photoConfirmed": true, "photoNumber": 11, "publish": true },
+    { "id": "student-12", "status": "current", "name": "Xuming He", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/xuming-he.jpg", "photoPosition": "40% 35%", "photoConfirmed": true, "photoNumber": 12, "publish": true },
+    { "id": "student-16", "status": "alumni", "name": "Yao Chen", "role": "Master's Graduate", "affiliation": "Tencent", "detail": "", "photo": "assets/students/yao-chen.png", "photoPosition": "50% 35%", "photoConfirmed": true, "photoNumber": 13, "publish": true },
+    { "id": "student-17", "status": "alumni", "name": "Chaotian Song", "role": "Master's Graduate", "affiliation": "Tencent", "detail": "", "photo": "assets/students/chaotian-song.jpg", "photoPosition": "50% 35%", "photoConfirmed": true, "photoNumber": 14, "publish": true }
+  ],
+  "recruitment": {
+    "heading": "Join My Group",
+    "text": "My expectations are that you have a genuine interest in technology, are self-motivated, and can make full use of AI across all aspects of your work. I am neither a “push-style” supervisor nor a “sheep-style” (🐑, completely hands-off) supervisor. I believe the relationship between students and their supervisor should be a collaborative partnership built on a shared understanding. I can provide computing resources, help assess and refine research topics, and recommend students for internships at major technology companies and research exchanges at leading universities abroad. Students can pursue impactful research papers or build AI applications and products with genuine practical value. I have maintained good collaborative relationships with my past students. If you would like a more candid picture of me as a supervisor, you are welcome to contact my students. If you are interested in joining my group, I generally expect you to rank in the top 5% of your undergraduate cohort at your university. This requirement may be relaxed for students from top universities, students with awards in programming competitions, or students who are among the first two authors of a paper published at a CCF-A venue. I also expect you to have completed at least one research project from start to finish. What matters is that you understand every detail of your research experience, rather than doing superficial work just to decorate your CV. I can readily assess whether you have actually implemented the research yourself. If you meet these requirements, you are welcome to send a one-page PDF CV to wuboxi@zju.edu.cn.",
+    "photo": {
+      "image": "assets/group-dinner.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": "Members of my research group at the annual group dinner in December 2025.",
+      "caption": "December 2025 · Annual Group Dinner"
+    }
+  },
+  "publications": [
+    {
+      "id": "degre", "year": 2026, "venue": "KDD", "venueFull": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "title": "DeGRe: Dense-supervised Generative Reranking for Recommendation",
+      "authors": ["Chaotian Song", "Jingyao Zhang", "Chenghao Chen", "Zisen Sang", "Dehai Zhao", "Guodong Cao", "Boxi Wu", "Deng Cai", "Jia Jia"],
+      "role": "Corresponding author", "award": "Best Paper Award · ADS Honorable Mention",
+      "links": [{ "label": "Paper", "url": "https://arxiv.org/abs/2605.25749" }, { "label": "Award", "url": "https://kdd2026.kdd.org/awards/" }]
+    },
+    {
+      "id": "beyond-fidelity", "year": 2026, "venue": "IEEE TIP", "venueFull": "IEEE Transactions on Image Processing",
+      "title": "Beyond Fidelity: Diverse Image Synthesis via Retrieval-Augmented Diffusion",
+      "authors": ["Linxuan Xia", "Boxi Wu", "Xiaolong Yang", "Tianrun Wu", "Yibo Zhao", "Deng Cai", "Wei Liu"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://doi.org/10.1109/TIP.2026.3706287" }]
+    },
+    {
+      "id": "video-reasoning", "year": 2026, "venue": "ACM MM", "venueFull": "ACM International Conference on Multimedia",
+      "title": "Probing Human-Centric Rule-based Reasoning Abilities of Video Generation Models for Vision Foundation Intelligence",
+      "authors": ["Xuming He", "Zehao Fan", "Hengjia Li", "Fan Zhuo", "Hankun Xu", "Senlin Cheng", "Di Weng", "Haifeng Liu", "Can Ye", "Boxi Wu"], "role": "Corresponding author", "award": "Oral presentation", "links": []
+    },
+    {
+      "id": "snr-edit", "year": 2026, "venue": "ACM MM", "venueFull": "ACM International Conference on Multimedia",
+      "title": "SNR-Edit: Structure-Aware Noise Rectification for Inversion-Free Flow-Based Editing",
+      "authors": ["Lifan Jiang", "Boxi Wu", "Yuhang Pei", "Tianrun Wu", "Yongyuan Chen", "Yan Zhao", "Shiyu Yu", "Deng Cai"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://arxiv.org/abs/2601.19180" }]
+    },
+    {
+      "id": "any-to-bokeh", "year": 2026, "venue": "ICLR", "venueFull": "International Conference on Learning Representations",
+      "title": "Any-to-Bokeh: Arbitrary-Subject Video Refocusing with Video Diffusion Model",
+      "authors": ["Yang Yang", "Siming Zheng", "Qirui Yang", "Jinwei Chen", "Boxi Wu", "Xiaofei He", "Deng Cai", "Bo Li", "Peng-Tao Jiang"],
+      "role": "Corresponding author", "award": "",
+      "links": [{ "label": "Paper", "url": "https://arxiv.org/abs/2505.21593" }, { "label": "Code", "url": "https://github.com/vivoCameraResearch/any-to-bokeh" }]
+    },
+    {
+      "id": "dsc-track", "year": 2026, "venue": "AAAI", "venueFull": "AAAI Conference on Artificial Intelligence",
+      "title": "Delving into Dynamic Scene Cue-Consistency for Robust 3D Multi-Object Tracking",
+      "authors": ["Haonan Zhang", "Xinyao Wang", "Boxi Wu", "Tu Zheng", "Wang Yunhua", "Zheng Yang"],
+      "role": "Corresponding author", "award": "Oral presentation", "links": [{ "label": "Paper", "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38242" }]
+    },
+    {
+      "id": "diagramgpt", "year": 2026, "venue": "AAAI", "venueFull": "AAAI Conference on Artificial Intelligence",
+      "title": "DiagramGPT-Llama3: Enabling Editable, High-Fidelity Diagram Generation with Vision Large Language Models",
+      "authors": ["Yongyuan Chen", "Minjie Hong", "Boxi Wu", "Xicheng Han"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40286" }]
+    },
+    {
+      "id": "sudo", "year": 2025, "venue": "NeurIPS", "venueFull": "Advances in Neural Information Processing Systems",
+      "title": "Self-Supervised Direct Preference Optimization for Text-to-Image Diffusion Models",
+      "authors": ["Liang Peng", "Boxi Wu", "Haoran Cheng", "Yibo Zhao", "Xiaofei He"],
+      "role": "Corresponding author", "award": "",
+      "links": [{ "label": "Paper", "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/03600ae6c3392fd65ad7c3a90c6f7ce8-Abstract-Conference.html" }, { "label": "Code", "url": "https://github.com/SPengLiang/SUDO" }]
+    },
+    {
+      "id": "lora-composer", "year": 2025, "venue": "IEEE TIP", "venueFull": "IEEE Transactions on Image Processing",
+      "title": "LoRA-Composer: Leveraging Low-Rank Adaptation for Multi-Concept Customization in Training-Free Diffusion Models",
+      "authors": ["Yang Yang", "Wen Wang", "Liang Peng", "Chaotian Song", "Yao Chen", "Hengjia Li", "Xiaolong Yang", "Qinglin Lu", "Deng Cai", "Xiaofei He", "Boxi Wu", "Wei Liu"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://doi.org/10.1109/TIP.2025.3633153" }]
+    },
+    {
+      "id": "personalvideo", "year": 2025, "venue": "ICCV", "venueFull": "IEEE/CVF International Conference on Computer Vision",
+      "title": "PersonalVideo: High ID-Fidelity Video Customization without Dynamic and Semantic Degradation",
+      "authors": ["Hengjia Li", "Haonan Qiu", "Shiwei Zhang", "Xiang Wang", "Yujie Wei", "Zekun Li", "Yingya Zhang", "Boxi Wu", "Deng Cai"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_PersonalVideo_High_ID-Fidelity_Video_Customization_without_Dynamic_and_Semantic_Degradation_ICCV_2025_paper.html" }]
+    },
+    {
+      "id": "magicid", "year": 2025, "venue": "ICCV", "venueFull": "IEEE/CVF International Conference on Computer Vision",
+      "title": "MagicID: Hybrid Preference Optimization for ID-Consistent and Dynamic-Preserved Video Customization",
+      "authors": ["Hengjia Li", "Lifan Jiang", "Xi Xiao", "Tianyang Wang", "Hongwei Yi", "Boxi Wu", "Deng Cai"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Li_MagicID_Hybrid_Preference_Optimization_for_ID-Consistent_and_Dynamic-Preserved_Video_Customization_ICCV_2025_paper.html" }]
+    },
+    {
+      "id": "local-control", "year": 2025, "venue": "AAAI", "venueFull": "AAAI Conference on Artificial Intelligence",
+      "title": "Local Conditional Controlling for Text-to-Image Diffusion Models",
+      "authors": ["Yibo Zhao", "Liang Peng", "Yang Yang", "Zekai Luo", "Hengjia Li", "Yao Chen", "Zheng Yang", "Xiaofei He", "Wei Zhao", "Qinglin Lu", "Wei Liu", "Boxi Wu"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://ojs.aaai.org/index.php/AAAI/article/view/33139" }]
+    },
+    {
+      "id": "occupancym3d", "year": 2024, "venue": "CVPR", "venueFull": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "title": "Learning Occupancy for Monocular 3D Object Detection",
+      "authors": ["Liang Peng", "Junkai Xu", "Haoran Cheng", "Zheng Yang", "Xiaopei Wu", "Wei Qian", "Wenxiao Wang", "Boxi Wu", "Deng Cai"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Peng_Learning_Occupancy_for_Monocular_3D_Object_Detection_CVPR_2024_paper.html" }]
+    },
+    {
+      "id": "temporal-fusion", "year": 2024, "venue": "IEEE TIP", "venueFull": "IEEE Transactions on Image Processing",
+      "title": "Temporal Feature Fusion for 3D Detection in Monocular Video",
+      "authors": ["Haoran Cheng", "Liang Peng", "Zheng Yang", "Binbin Lin", "Xiaofei He", "Boxi Wu"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://doi.org/10.1109/TIP.2024.3378475" }]
+    },
+    {
+      "id": "hboe", "year": 2024, "venue": "AAAI", "venueFull": "AAAI Conference on Artificial Intelligence",
+      "title": "Towards Fine-Grained HBOE with Rendered Orientation Set and Laplace Smoothing",
+      "authors": ["Ruisi Zhao", "Mingming Li", "Zheng Yang", "Binbin Lin", "Xiaohui Zhong", "Xiaobo Ren", "Deng Cai", "Boxi Wu"],
+      "role": "Corresponding author", "award": "", "links": [{ "label": "Paper", "url": "https://ojs.aaai.org/index.php/AAAI/article/view/28582" }]
+    },
+    {
+      "id": "ice", "year": 2023, "venue": "AAAI", "venueFull": "AAAI Conference on Artificial Intelligence",
+      "title": "Towards In-Distribution Compatible Out-of-Distribution Detection",
+      "authors": ["Boxi Wu", "Jie Jiang", "Haidong Ren", "Zifan Du", "Wenxiao Wang", "Zhifeng Li", "Deng Cai", "Xiaofei He", "Binbin Lin", "Wei Liu"],
+      "role": "First author", "award": "", "links": [{ "label": "Paper", "url": "https://ojs.aaai.org/index.php/AAAI/article/view/26230" }]
+    },
+    {
+      "id": "efficient-at", "year": 2022, "venue": "ECCV", "venueFull": "European Conference on Computer Vision",
+      "title": "Towards Efficient Adversarial Training on Vision Transformers",
+      "authors": ["Boxi Wu", "Jindong Gu", "Zhifeng Li", "Deng Cai", "Xiaofei He", "Wei Liu"],
+      "role": "First author", "award": "", "links": [{ "label": "Paper", "url": "https://arxiv.org/abs/2207.10498" }]
+    },
+    {
+      "id": "wider-networks", "year": 2021, "venue": "NeurIPS", "venueFull": "Advances in Neural Information Processing Systems",
+      "title": "Do Wider Neural Networks Really Help Adversarial Robustness?",
+      "authors": ["Boxi Wu", "Jinghui Chen", "Deng Cai", "Xiaofei He", "Quanquan Gu"],
+      "role": "First author", "award": "", "links": [{ "label": "Paper", "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/3937230de3c8041e4da6ac3246a888e8-Abstract.html" }]
+    }
+  ]
+}
