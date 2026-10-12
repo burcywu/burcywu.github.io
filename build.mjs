@@ -69,6 +69,7 @@ if (site.recruitment.photo) {
 }
 
 const emailLink = `mailto:${escapeHtml(site.email)}`;
+const displayName = site.chineseName ? `${site.name} (${site.chineseName})` : site.name;
 const publications = [...site.publications].sort((first, second) => second.year - first.year);
 const updated = new Intl.DateTimeFormat('en', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${site.lastUpdated}T12:00:00Z`));
 
@@ -102,7 +103,7 @@ function teachingHtml() {
 
 function head(title, description, preview = false, cv = false) {
   const canonical = `${site.siteUrl}/${cv ? 'cv.html' : ''}`;
-  const structuredData = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Person', name: site.name, url: site.siteUrl, jobTitle: site.title, affiliation: { '@type': 'CollegeOrUniversity', name: site.university }, email: site.email, sameAs: Object.values(site.links) }).replace(/</g, '\\u003c');
+  const structuredData = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Person', name: site.name, alternateName: site.chineseName, url: site.siteUrl, jobTitle: site.title, affiliation: { '@type': 'CollegeOrUniversity', name: site.university }, email: site.email, sameAs: Object.values(site.links) }).replace(/</g, '\\u003c');
   return `<!doctype html><html lang="en"><head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="theme-color" content="#ffffff">
@@ -158,12 +159,12 @@ function recruitmentHtml() {
 function homepage(preview = false) {
   const extraCount = Math.max(0, publications.length - 5);
   const researchStatement = [escapeHtml(site.intro), escapeHtml(site.recognition), site.company ? `I am also the ${escapeHtml(site.company.role)} of <a href="${safeUrl(site.company.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(site.company.name)}</a>.` : ''].filter(Boolean).join(' ');
-  return `${head(`${site.name} | ${site.university}`, `${site.name}, ${site.title} at ${site.university}. ${site.intro}`, preview)}
+  return `${head(`${displayName} | ${site.university}`, `${displayName}, ${site.title} at ${site.university}. ${site.intro}`, preview)}
 <body${preview ? ' class="is-preview"' : ''}>
   ${preview ? '<div class="preview-banner">Local preview</div>' : ''}${header()}
   <main id="main" class="container">
     <section class="hero" id="about" aria-labelledby="name-heading"><div class="hero-copy">
-      <h1 id="name-heading">${escapeHtml(site.name)}</h1>
+      <h1 id="name-heading">${escapeHtml(site.name)}${site.chineseName ? `<span class="chinese-name" lang="zh-Hans">（${escapeHtml(site.chineseName)}）</span>` : ''}</h1>
       <a class="hero-email" href="${emailLink}">${escapeHtml(site.email)}</a>
       <p class="position"><strong>${escapeHtml(site.title)}</strong><strong>${escapeHtml(site.supervision)}</strong></p>
       <p class="affiliation">${escapeHtml(site.school)}, ${escapeHtml(site.university)}</p>
@@ -183,7 +184,7 @@ function homepage(preview = false) {
 }
 
 function cvPage() {
-  return `${head(`${site.name} | Curriculum Vitae`, `Academic background, teaching, and publications of ${site.name}.`, false, true)}<body class="cv-page">${header(true)}<main id="main" class="container cv-content"><p class="eyebrow">Curriculum vitae</p><h1>${escapeHtml(site.name)}</h1><p class="position">${escapeHtml(site.title)} · ${escapeHtml(site.supervision)}</p><p>${escapeHtml(site.school)}, ${escapeHtml(site.university)}<br><a href="${emailLink}">${escapeHtml(site.email)}</a></p><p class="cv-updated">Updated ${escapeHtml(updated)}</p><section><h2>Research interests</h2><p>${site.research.map((topic) => escapeHtml(topic.name)).join(' · ')}</p></section><section><h2>Education & research experience</h2>${backgroundHtml()}</section><section><h2>Teaching</h2>${teachingHtml()}</section><section><h2>Selected publications</h2><ol class="publication-list">${publications.map((paper) => paperHtml(paper, true)).join('')}</ol></section></main>${footer()}</body></html>`;
+  return `${head(`${displayName} | Curriculum Vitae`, `Academic background, teaching, and publications of ${displayName}.`, false, true)}<body class="cv-page">${header(true)}<main id="main" class="container cv-content"><p class="eyebrow">Curriculum vitae</p><h1>${escapeHtml(site.name)}</h1><p class="position">${escapeHtml(site.title)} · ${escapeHtml(site.supervision)}</p><p>${escapeHtml(site.school)}, ${escapeHtml(site.university)}<br><a href="${emailLink}">${escapeHtml(site.email)}</a></p><p class="cv-updated">Updated ${escapeHtml(updated)}</p><section><h2>Research interests</h2><p>${site.research.map((topic) => escapeHtml(topic.name)).join(' · ')}</p></section><section><h2>Education & research experience</h2>${backgroundHtml()}</section><section><h2>Teaching</h2>${teachingHtml()}</section><section><h2>Selected publications</h2><ol class="publication-list">${publications.map((paper) => paperHtml(paper, true)).join('')}</ol></section></main>${footer()}</body></html>`;
 }
 
 await writeFile(join(root, 'index.html'), homepage());
@@ -203,8 +204,12 @@ for (const asset of publishAssets) {
   await cp(join(root, asset), join(output, asset));
 }
 await writeFile(join(output, '.nojekyll'), '');
-await writeFile(join(output, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['', '/cv.html'].map((path) => `<url><loc>${escapeHtml(site.siteUrl + path)}</loc><lastmod>${site.lastUpdated}</lastmod></url>`).join('')}</urlset>`);
-await writeFile(join(output, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${site.siteUrl}/sitemap.xml\n`);
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['/', '/cv.html'].map((path) => `<url><loc>${escapeHtml(site.siteUrl + path)}</loc><lastmod>${site.lastUpdated}</lastmod></url>`).join('')}</urlset>`;
+const robots = `User-agent: *\nAllow: /\nSitemap: ${site.siteUrl}/sitemap.xml\n`;
+for (const directory of [root, output]) {
+  await writeFile(join(directory, 'sitemap.xml'), sitemap);
+  await writeFile(join(directory, 'robots.txt'), robots);
+}
 const hostname = new URL(site.siteUrl).hostname;
 if (!hostname.endsWith('.github.io')) await writeFile(join(output, 'CNAME'), `${hostname}\n`);
 console.log(`Built ${publications.length} publications (${Object.values(figures).filter((figure) => figure.image).length} original figures); 5 initially visible. Students: ${site.students.filter((student) => student.status === 'current').length} current / ${site.students.filter((student) => student.status === 'alumni').length} alumni, ${site.students.filter((student) => student.photoConfirmed).length} supplied student portraits. Deployment folder: _site/`);

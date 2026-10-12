@@ -1,12 +1,13 @@
 {
   "name": "Boxi Wu",
+  "chineseName": "武伯熹",
   "title": "Distinguished Research Fellow",
   "supervision": "Ph.D. Supervisor",
   "school": "School of Software Technology",
   "university": "Zhejiang University",
   "email": "wuboxi@zju.edu.cn",
   "siteUrl": "https://burcywu.github.io",
-  "lastUpdated": "2026-10-10",
+  "lastUpdated": "2026-10-12",
   "portrait": "assets/boxi-wu.jpg",
   "portraitWidth": 1078,
   "portraitHeight": 1379,
@@ -67,6 +68,7 @@
     { "id": "student-09", "status": "current", "name": "Yuhang Pei", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/yuhang-pei.jpg", "photoPosition": "53% 35%", "photoConfirmed": true, "photoNumber": 9, "publish": true },
     { "id": "student-10", "status": "current", "name": "Lanxin Ye", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/lanxin-ye.jpg", "photoPosition": "50% 25%", "photoConfirmed": true, "photoNumber": 10, "publish": true },
     { "id": "student-11", "status": "current", "name": "Yiming Xu", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/yiming-xu.jpg", "photoPosition": "50% 35%", "photoConfirmed": true, "photoNumber": 11, "publish": true },
+    { "id": "student-19", "status": "current", "name": "Yechuan Zhang", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/yechuan-zhang.jpg", "photoPosition": "60% 35%", "photoConfirmed": true, "photoNumber": 15, "publish": true },
     { "id": "student-12", "status": "current", "name": "Xuming He", "role": "Master's Student", "affiliation": "College of Computer Science and Technology", "detail": "", "photo": "assets/students/xuming-he.jpg", "photoPosition": "40% 35%", "photoConfirmed": true, "photoNumber": 12, "publish": true },
     { "id": "student-16", "status": "alumni", "name": "Yao Chen", "role": "Master's Graduate", "affiliation": "Tencent", "detail": "", "photo": "assets/students/yao-chen.png", "photoPosition": "50% 35%", "photoConfirmed": true, "photoNumber": 13, "publish": true },
     { "id": "student-17", "status": "alumni", "name": "Chaotian Song", "role": "Master's Graduate", "affiliation": "Tencent", "detail": "", "photo": "assets/students/chaotian-song.jpg", "photoPosition": "50% 35%", "photoConfirmed": true, "photoNumber": 14, "publish": true }
