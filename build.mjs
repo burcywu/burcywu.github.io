@@ -46,6 +46,7 @@ for (const paper of site.publications) {
 const studentPhotoNumbers = new Set();
 for (const student of site.students) {
   if (student.publish && !student.name.trim()) throw new Error(`Confirm the name before publishing ${student.id}.`);
+  if (student.homepage) safeUrl(student.homepage);
   if (student.photoConfirmed) {
     if (!Number.isInteger(student.photoNumber) || student.photoNumber < 1 || studentPhotoNumbers.has(student.photoNumber) || !student.role?.trim()) throw new Error(`Confirmed student photos require a unique positive number and role: ${student.id}.`);
     studentPhotoNumbers.add(student.photoNumber);
@@ -132,12 +133,13 @@ function visibleStudents(preview = false) {
 function studentHtml(student, index) {
   const photoNumber = String(student.photoNumber).padStart(2, '0');
   const label = student.name || (student.photoConfirmed ? `Photo ${photoNumber}` : `${student.status === 'current' ? 'Student' : 'Graduate'} ${String(index + 1).padStart(2, '0')}`);
+  const name = student.homepage ? `<a href="${safeUrl(student.homepage)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>` : escapeHtml(label);
   const alt = student.name ? `Portrait of ${student.name}` : student.photoConfirmed ? `${student.role} portrait ${photoNumber}; name pending.` : `Repeated placeholder portrait for ${student.status === 'current' ? 'current students' : 'alumni'}, slot ${index + 1}`;
   const image = `<img src="${localAsset(student.photo)}" width="500" height="500" style="object-position: ${escapeHtml(student.photoPosition)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">`;
-  const portrait = student.photoConfirmed ? `<a class="student-portrait-link" href="${localAsset(student.photo)}" target="_blank" rel="noopener" aria-label="View full portrait for ${escapeHtml(label)}">${image}</a>` : image;
+  const portrait = student.homepage ? `<a class="student-portrait-link" href="${safeUrl(student.homepage)}" target="_blank" rel="noopener noreferrer" aria-label="Visit ${escapeHtml(label)}&#39;s homepage">${image}</a>` : student.photoConfirmed ? `<a class="student-portrait-link" href="${localAsset(student.photo)}" target="_blank" rel="noopener" aria-label="View full portrait for ${escapeHtml(label)}">${image}</a>` : image;
   const note = student.photoConfirmed && !student.name ? '<p class="profile-pending">Name and year pending</p>' : !student.photoConfirmed && !student.publish ? '<p class="draft-label">Photo placeholder</p>' : '';
   const affiliation = student.affiliation || (student.name ? 'Affiliation to be added' : '');
-  return `<article class="person-card" data-student-id="${escapeHtml(student.id)}"${student.photoConfirmed ? ` data-photo-number="${photoNumber}"` : ''}>${portrait}<div class="person-details"><h4>${escapeHtml(label)}</h4>${student.role ? `<p class="student-degree">${escapeHtml(student.role)}</p>` : ''}${affiliation ? `<p class="person-affiliation${student.affiliation ? '' : ' affiliation-pending'}">${escapeHtml(affiliation)}</p>` : ''}${student.detail ? `<p class="muted">${escapeHtml(student.detail)}</p>` : ''}${note}</div></article>`;
+  return `<article class="person-card" data-student-id="${escapeHtml(student.id)}"${student.photoConfirmed ? ` data-photo-number="${photoNumber}"` : ''}>${portrait}<div class="person-details"><h4>${name}</h4>${student.role ? `<p class="student-degree">${escapeHtml(student.role)}</p>` : ''}${affiliation ? `<p class="person-affiliation${student.affiliation ? '' : ' affiliation-pending'}">${escapeHtml(affiliation)}</p>` : ''}${student.detail ? `<p class="muted">${escapeHtml(student.detail)}</p>` : ''}${note}</div></article>`;
 }
 
 function studentsHtml(preview) {
